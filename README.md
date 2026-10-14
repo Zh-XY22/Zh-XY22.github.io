@@ -1,29 +1,15 @@
-# Xingyu Zhang — Academic Homepage (Private Draft)
+# Xingyu Zhang 张星宇 — Academic Homepage
 
-This is a standalone academic homepage inspired by the two-column **Academic Portfolio Astro** layout and the restrained Minimal Light palette (white, dark navy, soft blue). It is an original static HTML/CSS implementation, not a fork of the Astro source.
+Personal research homepage featuring four selected publications, original method diagrams, research interests, education, news, and honors. The profile currently uses a static site suitable for GitHub Pages.
 
-## Status
+## Publication status
 
-**PRIVATE DRAFT.** This repository must remain Private. **Do not enable GitHub Pages or switch it to Public** until the owner explicitly approves the finished site. A noindex directive is included for review but is not an access-control mechanism.
+Site content is ready for public review, but making this repository public and enabling GitHub Pages must be completed in GitHub repository Settings by the repository owner.
 
-## Content
+## Publication steps
 
-- About: Ph.D. student at ISCAS / UCAS, advised by Changwen Zheng and Wenwen Qiang; contact email authorized for publication.
-- Research interests: time-series forecasting, causal and structural modeling, LLM-based modeling; newer interests in agentic RL and World Action Models (WAMs), without presenting submitted work as accepted.
-- News, six Selected Publications, Education, Honors & Awards.
-- No Projects & Code section.
+1. In Settings > General > Danger Zone, change repository visibility from Private to Public.
+2. In Settings > Pages, choose Deploy from a branch, branch `main`, folder `/(root)`, then Save.
+3. Confirm that https://zh-xy22.github.io/ loads with all figure images.
 
-## Editing
-
-Update `index.html` for biographies, dates, papers, news and links. The palette and responsive layout are in `assets/styles.css`. To preview locally run `python3 -m http.server 8000` and visit http://localhost:8000/.
-
-## Award attachment limitation
-
-The website includes `assets/ebmv-2026-award-summary.svg`, a **clearly labeled illustrated summary**, based on the supplied EBMV 2026 third-place award. **It is not the official certificate image**. The original high-resolution PDF is included in the separately supplied local ZIP but is not uploaded through this text-only connector. After approval, upload `assets/ebmv-2026-award.pdf` from the local ZIP using GitHub's browser upload or Git, then replace the summary link in `index.html` with that exact file path. Do not publish a broken PDF link.
-
-## Publishing checklist
-
-1. Verify the bio, advisor affiliations and author lists; use a preferred headshot if desired.
-2. Upload the original certificate PDF if you want a link to it.
-3. Explicitly approve publishing; only then change the repository visibility and enable GitHub Pages.
-4. Only once approved for search indexing, change `<meta name="robots" content="noindex,nofollow">` and `robots.txt`.
+The HTML uses local paths `assets/figures/*.png` and contains inline portrait and award certificate preview. `robots.txt` allows indexing only after the website is made publicly accessible.
