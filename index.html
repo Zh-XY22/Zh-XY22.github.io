@@ -90,6 +90,15 @@ a{color:var(--blue);text-decoration:none}a:hover{color:var(--hover);text-decorat
 #publications .paper-links{margin-top:auto;padding-top:14px;gap:17px}
 #publications .paper-links .action{font-size:12.5px}
 @media(max-width:695px){#publications .paper{padding:14px 14px 16px}#publications .paper-title{font-size:14.4px}#publications .paper .paper-figure{padding:4px;margin-bottom:14px}}
+
+/* Professional service */
+.service-group{border-top:1px solid var(--line);padding-top:16px}
+.service-group h3{font-size:14px;line-height:1.4;color:var(--title);margin:0 0 9px;font-weight:700}
+.service-list{list-style:none;padding:0;margin:0}
+.service-list li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid #eff1f3;font-size:13.2px;line-height:1.55}
+.service-list li:last-child{border-bottom:0}
+.service-years{flex:0 0 auto;color:#85929b;font-size:12.5px;font-weight:650;white-space:nowrap}
+@media(max-width:695px){.service-list li{font-size:12.5px;gap:10px}.service-years{font-size:12px}}
 </style>
 <title>Xingyu Zhang | Academic Homepage</title>
 </head><body>
@@ -108,7 +117,7 @@ a{color:var(--blue);text-decoration:none}a:hover{color:var(--hover);text-decorat
 </div>
 </aside>
 <div class="main-col">
-<header class="topbar"><nav aria-label="Sections"><a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#honors">Honors</a></nav></header>
+<header class="topbar"><nav aria-label="Sections"><a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#service">Service</a><a href="#honors">Honors</a></nav></header>
 <main class="content" id="main">
 <section class="section" id="about">
 <div class="eyebrow">Welcome</div>
@@ -147,7 +156,7 @@ a{color:var(--blue);text-decoration:none}a:hover{color:var(--hover);text-decorat
 <div class="paper-authors"><strong>Xingyu Zhang</strong>, Jingyao Wang, Zeen Song, Changwen Zheng, Wenwen Qiang</div>
 <div class="paper-venue">ACM International Conference on Multimedia (ACM MM), 2026</div>
 <p class="paper-summary">This work proposes a control-theoretic closed-loop forecasting framework that feeds back past prediction errors to dynamically correct forecasts and mitigate error accumulation in long-horizon LLM-based prediction. This feedback principle may extend to complex systems requiring long-term prediction or sequential decision-making, offering a path toward greater stability and reliability in evolving dynamics.</p>
-<div class="paper-links"><a class="action" href="https://arxiv.org/abs/2602.12756" rel="noopener noreferrer" target="_blank">Paper</a><a class="action" href="https://arxiv.org/pdf/2602.12756" rel="noopener noreferrer" target="_blank">PDF</a></div>
+<div class="paper-links"><a class="action" href="https://arxiv.org/abs/2602.12756" rel="noopener noreferrer" target="_blank">Paper</a><a class="action" href="https://arxiv.org/pdf/2602.12756" rel="noopener noreferrer" target="_blank">PDF</a><a class="action" href="https://github.com/Zh-XY22/F-LLM" rel="noopener noreferrer" target="_blank">Code</a></div>
 </div></article>
 <article class="paper"><div class="paper-kicker">ICML 2025</div>
 
@@ -176,6 +185,18 @@ a{color:var(--blue);text-decoration:none}a:hover{color:var(--hover);text-decorat
 <section class="section" id="education">
 <div class="section-heading"><h2>Education</h2></div>
 <div class="edu-item"><div class="edu-dates">2023 — 2029 <span>(expected)</span></div><div><h3>Ph.D. Student (Integrated Master's–Ph.D. Track)</h3><p>University of Chinese Academy of Sciences (UCAS)</p><p>Institute of Software, Chinese Academy of Sciences (ISCAS)</p></div></div>
+</section>
+<section class="section" id="service">
+<div class="section-heading"><h2>Professional Service</h2></div>
+<div class="service-group">
+<h3>Conference Reviewer</h3>
+<ul class="service-list">
+<li><span>International Conference on Learning Representations (ICLR)</span><span class="service-years">2026, 2027</span></li>
+<li><span>International Conference on Machine Learning (ICML)</span><span class="service-years">2026</span></li>
+<li><span>Conference on Neural Information Processing Systems (NeurIPS)</span><span class="service-years">2026</span></li>
+<li><span>AAAI Conference on Artificial Intelligence (AAAI)</span><span class="service-years">2027</span></li>
+</ul>
+</div>
 </section>
 <section class="section" id="honors">
 <div class="section-heading"><h2>Honors &amp; Awards</h2></div>
